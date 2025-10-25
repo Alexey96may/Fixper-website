@@ -1,5 +1,5 @@
 @use "../utils/fonts";
-@use "../utils/vars";
+@use "../bootstrap";
 
 html {
     font-size: vars.$basicFontSize;
@@ -17,6 +17,7 @@ body {
 
 .container {
     max-width: vars.$containerWidth;
+    padding: 0 vars.$containerPadding;
     margin: 0 auto;
 }
 
