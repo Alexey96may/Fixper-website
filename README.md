@@ -1,3 +1,13 @@
-# Vite bundle
+# Fixper Website
 
-My bundle on **Vite 7** (Typescript, SCSS, html modules, webp/avif transforming & checking, font plugging in, spritemap...)
+**A website** for repair appliances. **The design** is from Internet.
+
+<!-- [Presentation](https://alexey96may.github.io/Fixper-website/dist/) -->
+
+## Original Design Layout
+
+![Alt-Original Design Layout](/design.jpg)
+
+## Original Mobile Design Layout
+
+![Alt-Original Design Layout](/design-mobile.jpg)
