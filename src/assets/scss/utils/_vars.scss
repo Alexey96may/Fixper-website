@@ -10,19 +10,19 @@ $footerBgColor: #e4e4e4;
 
 // Fonts
 $mainFontFamily: "OpenSans", "Open Sans", sans-serif;
-$basicFontSize: 16px;
+$fontSize: 16px;
 
 //  Container
 $containerPadding: 16px;
 $containerWidth: calc(1400px + ($containerPadding * 2));
 
 //  Transitions
-$basicTransTime: 0.3s;
+$trans: 0.3s;
 
 // Paddings & Margins
-$mainPadding: 1rem;
-$mainMargin: 1rem;
-$mainGap: 1rem;
+$padding: 1rem;
+$margin: 1rem;
+$gap: 1rem;
 
 // Medias
 $mediaPC: 1400px;

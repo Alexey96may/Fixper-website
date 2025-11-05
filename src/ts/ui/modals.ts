@@ -5,9 +5,9 @@ export class Modals {
 
     constructor() {
         for (let i = 0; i < this.#moreInfoLinks.length; i++) {
-            let moreInfoLink = this.#moreInfoLinks[i];
-            let modalLeisure = this.#modalLeisures[i];
-            let modalButton = document.querySelectorAll(".modal-button")[i];
+            const moreInfoLink = this.#moreInfoLinks[i];
+            const modalLeisure = this.#modalLeisures[i];
+            const modalButton = document.querySelectorAll(".modal-button")[i];
 
             moreInfoLink?.addEventListener("click", (event) => {
                 event.stopPropagation();

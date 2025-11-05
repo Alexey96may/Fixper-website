@@ -1,14 +1,14 @@
 @use "../utils/fonts";
-@use "../bootstrap";
+@use "../bootstrap" as b;
 
 html {
-    font-size: vars.$basicFontSize;
+    font-size: b.$basicFontSize;
 }
 
 body {
-    background-color: vars.$lightBgColor;
-    font-family: vars.$mainFontFamily;
-    color: vars.$mainTextColor;
+    background-color: b.$lightBgColor;
+    font-family: b.$fontSize;
+    color: b.$mainTextColor;
 }
 
 .body__fixed {
@@ -16,8 +16,8 @@ body {
 }
 
 .container {
-    max-width: vars.$containerWidth;
-    padding: 0 vars.$containerPadding;
+    max-width: b.$containerWidth;
+    padding: 0 b.$containerPadding;
     margin: 0 auto;
 }
 
