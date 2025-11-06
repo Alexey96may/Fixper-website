@@ -1,33 +1,37 @@
 // Text Colors
-$mainTextColor: #000000;
-$linkTextColor: #00636d;
+$mainTextColor: #343b4e;
+$paleTextColor: rgba(52, 59, 78, 0.5);
+$linkTextColor: #8b4ee7;
 $lightTextColor: #ffffff;
+$emphasTextColor: #ff7826;
 
 // Background Colors
 $lightBgColor: #ffffff;
-$darkBgColor: #73e5ff;
-$footerBgColor: #e4e4e4;
+$darkBgColor: #fbf8ff;
+$buttonBgColor: #ff7826;
+$buttonDarkBgColor: #8b4ee7;
+$tagBgColor: #4db45e;
 
-// Fonts
-$mainFontFamily: "OpenSans", "Open Sans", sans-serif;
-$fontSize: 16px;
+// Fonts #343B4E #8B4EE7 #F9C758 #FF7826
+$fontFamily: "Rubik", "Open Sans", sans-serif;
+$fontSize: 18px;
 
 //  Container
-$containerPadding: 16px;
-$containerWidth: calc(1400px + ($containerPadding * 2));
+$containerPadding: 15px;
+$containerWidth: calc(974px + ($containerPadding * 2));
 
 //  Transitions
 $trans: 0.3s;
 
 // Paddings & Margins
-$padding: 1rem;
-$margin: 1rem;
-$gap: 1rem;
+$padding: 15px;
+$margin: 15px;
+$gap: 15px;
 
 // Medias
 $mediaPC: 1400px;
 $mediaSmallPC: 1200px;
-$mediaTablet: 992px;
+$mediaTablet: 1024px;
 $mediaSmallTablet: 768px;
 $mediaMobile: 576px;
-$mediaSmallMobile: 320px;
+$mediaSmallMobile: 375px;
