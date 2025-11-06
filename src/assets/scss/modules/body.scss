@@ -23,8 +23,24 @@ body {
     overflow: hidden;
 }
 
+.container--big {
+    max-width: calc(b.$bigContainerWidth + (b.$bigContainerPadding * 2));
+    padding: 0 b.$bigContainerPadding;
+    margin: 0 auto;
+
+    @media (max-width: b.$mediaTablet) {
+        max-width: calc(b.$bigContainerWidth + (25px * 2));
+        padding: 0 25px;
+    }
+
+    @media (max-width: b.$mediaSmallMobile) {
+        max-width: calc(b.$bigContainerWidth + (b.$containerPadding * 2));
+        padding: 0 b.$containerPadding;
+    }
+}
+
 .container {
-    max-width: b.$containerWidth;
+    max-width: calc(b.$containerWidth + (b.$containerPadding * 2));
     padding: 0 b.$containerPadding;
     margin: 0 auto;
 }

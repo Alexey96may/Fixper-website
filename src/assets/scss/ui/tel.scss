@@ -1,0 +1,17 @@
+@use "../bootstrap" as b;
+
+.tel {
+}
+
+.tel__link {
+    font-size: 16px;
+    font-weight: 500;
+
+    @media (max-width: b.$mediaTablet) {
+        font-size: 14px;
+    }
+
+    @media (max-width: b.$mediaSmallMobile) {
+        font-size: 16px;
+    }
+}

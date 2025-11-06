@@ -18,7 +18,9 @@ $fontSize: 18px;
 
 //  Container
 $containerPadding: 15px;
-$containerWidth: calc(974px + ($containerPadding * 2));
+$containerWidth: 974px;
+$bigContainerPadding: 50px;
+$bigContainerWidth: 1820px;
 
 //  Transitions
 $trans: 0.3s;

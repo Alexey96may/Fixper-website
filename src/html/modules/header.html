@@ -1,3 +1,95 @@
 <header class="header" id="header" aria-label="Header">
-    <div class="container header__container">Header</div>
+    <div class="container--big header__container">
+        <div class="header__left">
+            <div class="logo" aria-label="Поле логотипа">
+                <svg class="logo__img" aria-label="Логотип">
+                    <use href="/spritemap.svg#logo"></use>
+                </svg>
+                <svg class="logo__img-text" aria-label="Текст логотипа">
+                    <use href="/spritemap.svg#fixper"></use>
+                </svg>
+            </div>
+
+            <div class="header__full-nav">
+                <div class="dir header__dir" aria-label="Выбор направления">
+                    <button
+                        class="button button--circle dir__button"
+                        aria-label="Открыть направления"
+                    >
+                        <span class="button__line"></span>
+                    </button>
+                    <p class="dir__text">Выбор направления</p>
+                </div>
+
+                <nav class="nav header__nav" id="nav" aria-label="Навигация">
+                    <ul class="nav-list" aria-label="Список навигации">
+                        <li class="nav-item" aria-label="Пункт навигации">
+                            <a href="#" class="nav-link" aria-label="К гарантия"
+                                >Гарантии</a
+                            >
+                        </li>
+                        <li class="nav-item" aria-label="Пункт навигации">
+                            <a
+                                href="#"
+                                class="nav-link"
+                                aria-label="К как работает"
+                                >Как работает</a
+                            >
+                        </li>
+                        <li class="nav-item" aria-label="Пункт навигации">
+                            <a href="#" class="nav-link" aria-label="К мастерам"
+                                >Мастера</a
+                            >
+                        </li>
+                        <li class="nav-item" aria-label="Пункт навигации">
+                            <a href="#" class="nav-link" aria-label="К прайсу"
+                                >Прайс</a
+                            >
+                        </li>
+                        <li class="nav-item" aria-label="Пункт навигации">
+                            <a
+                                href="#"
+                                class="nav-link"
+                                aria-label="К примерам работ"
+                                >Примеры работ</a
+                            >
+                        </li>
+                        <li class="nav-item" aria-label="Пункт навигации">
+                            <a href="#" class="nav-link" aria-label="К отзывам"
+                                >Отзывы</a
+                            >
+                        </li>
+                        <li class="nav-item" aria-label="Пункт навигации">
+                            <a href="#" class="nav-link" aria-label="К вопросам"
+                                >Вопросы</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header__right">
+            <div class="destin header__destin" aria-label="Выбор города">
+                <svg class="destin__mark-img" aria-label="Логотип метки">
+                    <use href="/spritemap.svg#dest"></use>
+                </svg>
+
+                <p class="destin__text" aria-label="Выбранный город">Москва</p>
+
+                <svg class="destin__arrow-img" aria-label="Стрелка">
+                    <use href="/spritemap.svg#arrow-down"></use>
+                </svg>
+            </div>
+
+            <div class="tel header__tel" aria-label="Телефоный номер">
+                <a
+                    href="tel:+74951775858"
+                    class="tel__link"
+                    aria-label="Позвонить"
+                    >+7 (495) 177-58-58</a
+                >
+            </div>
+        </div>
+    </div>
 </header>

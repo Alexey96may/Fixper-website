@@ -1,0 +1,35 @@
+@use "../bootstrap" as b;
+
+.destin {
+    cursor: pointer;
+    @include b.flex(flex-start, center);
+    gap: 5px;
+}
+
+.destin__text {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 2px;
+
+    @media (max-width: b.$mediaTablet) {
+        font-size: 14px;
+    }
+
+    @media (max-width: b.$mediaSmallMobile) {
+        font-size: 16px;
+    }
+}
+
+.destin__mark-img {
+    width: 25px;
+    height: 25px;
+    fill: #8b4ee7;
+    fill-opacity: 0.5;
+}
+
+.destin__arrow-img {
+    width: 11px;
+    height: 11px;
+    fill: #343b4e;
+    fill-opacity: 0.5;
+}

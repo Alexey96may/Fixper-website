@@ -1,1 +1,57 @@
 @use "../bootstrap" as b;
+@use "../components/nav";
+@use "../components/dir";
+@use "../components/destin";
+@use "../ui/logo";
+@use "../ui/buttons";
+@use "../ui/tel";
+
+.header {
+    padding: 25px 0;
+
+    @media (max-width: b.$mediaSmallMobile) {
+        font-size: 30px;
+    }
+}
+
+.header__container {
+    @include b.flex(space-between, center);
+    gap: 50px;
+
+    @media (max-width: b.$mediaTablet) {
+        max-width: calc(836px + (25px * 2));
+        padding: 0 25px;
+    }
+
+    @media (max-width: b.$mediaSmallMobile) {
+        max-width: calc(b.$bigContainerWidth + (b.$containerPadding * 2));
+        padding: 0 b.$containerPadding;
+    }
+}
+
+.header__left {
+    @include b.flex(flex-start, center);
+    gap: 70px;
+}
+
+.header__right {
+    @include b.flex(flex-start, center);
+    gap: 50px;
+}
+
+.header__full-nav {
+    @include b.flex(flex-start, center);
+    gap: 50px;
+}
+
+.header__dir {
+}
+
+.header__nav {
+}
+
+.header__destin {
+}
+
+.header__tel {
+}
