@@ -4,40 +4,78 @@
     background: none;
     border: none;
     padding: 0;
+    transition: all b.$trans ease;
 }
 
 .button--circle {
-    position: relative;
     overflow: visible;
     width: 35px;
     height: 35px;
+    font-size: 2px;
+    background-color: b.$buttonDarkBgColor;
+    border-radius: 50%;
+    padding: 12px 10px;
 
-    &::before {
-        content: "";
-        background-color: b.$buttonDarkBgColor;
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
-        @include b.position(absolute, -1, top, left, 50%, 50%);
-        translate: -50% -50%;
+    @media (max-width: b.$mediaTablet) {
+        width: 30px;
+        height: 30px;
+        padding: 12px 9.5px;
+    }
+
+    @media (max-width: b.$mediaSmallMobile) {
+        padding: 10.5px 9.5px;
+    }
+}
+
+.button__lines {
+    position: relative;
+    width: 15px;
+    padding: 4px 0;
+    display: block;
+
+    @media (max-width: b.$mediaTablet) {
+        width: 11px;
+        padding: 3.5px 0;
+    }
+
+    @media (max-width: b.$mediaSmallMobile) {
+        width: 12px;
+        padding: 4px 0;
     }
 }
 
 .button__line {
-    display: inline-block;
+    display: block;
     width: 100%;
-    width: 14px;
     height: 1.5px;
     background-color: b.$lightBgColor;
-    vertical-align: middle;
+    border-radius: 2px;
+    transition: all b.$trans ease;
+
+    @media (max-width: b.$mediaTablet) {
+        height: 1px;
+    }
+
+    @media (max-width: b.$mediaSmallMobile) {
+        height: 1px;
+    }
 
     &::before,
     &::after {
         content: "";
-        display: inline-block;
-        width: 100%;
+        border-radius: 2px;
         height: 1.5px;
+        width: 100%;
         background-color: b.$lightBgColor;
+        transition: all b.$trans ease;
+
+        @media (max-width: b.$mediaTablet) {
+            height: 1px;
+        }
+
+        @media (max-width: b.$mediaSmallMobile) {
+            height: 1px;
+        }
     }
 
     &::before {

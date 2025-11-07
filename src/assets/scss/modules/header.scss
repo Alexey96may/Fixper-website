@@ -32,11 +32,20 @@
 .header__left {
     @include b.flex(flex-start, center);
     gap: 70px;
+
+    @media (max-width: 1770px) {
+        justify-content: space-between;
+        width: 100%;
+    }
 }
 
 .header__right {
     @include b.flex(flex-start, center);
     gap: 50px;
+
+    @media (max-width: 1770px) {
+        display: none;
+    }
 }
 
 .header__full-nav {
@@ -48,10 +57,14 @@
 }
 
 .header__nav {
+    @media (max-width: 1220px) {
+        display: none;
+    }
 }
 
 .header__destin {
 }
 
 .header__tel {
+    white-space: nowrap;
 }

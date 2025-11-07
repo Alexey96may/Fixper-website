@@ -2,8 +2,53 @@
 
 .dir {
     @include b.flex(flex-start, center);
+    cursor: pointer;
     gap: 13px;
     white-space: nowrap;
+    background-color: rgba(139, 78, 231, 0.05);
+    padding: 10px 22px 10px 10px;
+    border-radius: 100px;
+    transition: all b.$trans ease;
+
+    &:hover,
+    &:active,
+    &:focus-visible {
+        background-color: #a271ec;
+        color: b.$lightTextColor;
+
+        @media (hover: none) {
+            background-color: rgba(139, 78, 231, 0.05);
+            color: b.$mainTextColor;
+        }
+
+        .dir__button {
+            background-color: b.$lightBgColor;
+
+            @media (hover: none) {
+                background-color: b.$buttonDarkBgColor;
+            }
+
+            .button__line {
+                background-color: b.$mainTextColor;
+                @media (hover: none) {
+                    background-color: b.$lightBgColor;
+                }
+
+                &::before,
+                &::after {
+                    background-color: b.$mainTextColor;
+                    @media (hover: none) {
+                        background-color: b.$lightBgColor;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1770px) {
+        background-color: unset;
+        padding: 0;
+    }
 }
 
 .dir__button {
@@ -12,6 +57,10 @@
 .dir__text {
     font-size: 16px;
     font-weight: 500;
+
+    @media (max-width: 1770px) {
+        display: none;
+    }
 
     @media (max-width: b.$mediaTablet) {
         font-size: 14px;
