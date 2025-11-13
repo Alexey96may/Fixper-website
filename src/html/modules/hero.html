@@ -19,7 +19,7 @@
 
                 <a
                     href="tel:+74951775858"
-                    class="button button--circ"
+                    class="button button--circWhite"
                     aria-label="Позвонить"
                 >
                     <svg class="button__img" aria-label="Звонок">
@@ -32,46 +32,66 @@
         <div class="hero__image-wrapper" aria-label="Изображение услуги">
             <img
                 class="hero__image"
-                src="../../assets/img/hero/pic1.png"
+                src="./src/assets/img/hero/pic1.png"
                 alt="Стиральная машинка"
+            />
+
+            <img
+                class="hero__image-bg"
+                src="./src/assets/img/hero/hero-bg.png"
+                alt="Фон"
             />
 
             <p
                 class="hero__style-text"
                 aria-label="Стилизированный текст о ремонте"
             >
-                Качественный ремонт
+                Качественный ремонт<br />
                 <span class="text-emph">стиральных машин</span>
 
                 <svg class="hero__style-text-star" aria-label="Звезда">
                     <use href="/spritemap.svg#star2"></use>
                 </svg>
 
-                <svg class="hero__style-text-arrow" aria-label="Стрелка">
-                    <use href="/spritemap.svg#hero-arrow"></use>
-                </svg>
+                <img
+                    src="./src/assets/img/hero/arrow.png"
+                    class="hero__style-text-arrow"
+                    aria-label="Стрелка"
+                />
             </p>
 
-            <p class="hero__stars" aria-label="Стилизированный текст оценки">
-                <span class="hero__star-number" aria-label="Оценка">5+</span>
+            <div class="hero__stars" aria-label="Стилизированный текст оценки">
+                <div class="hero__stars-wrapper">
+                    <svg class="hero__star" aria-label="Звезда">
+                        <use href="/spritemap.svg#star"></use>
+                    </svg>
 
-                <svg class="hero__star" aria-label="Звезда">
-                    <use href="/spritemap.svg#star"></use>
-                </svg>
-            </p>
+                    <span class="hero__star-number" aria-label="Оценка"
+                        >5+</span
+                    >
+                </div>
+            </div>
 
             <div
                 class="hero__adjusting"
                 aria-label="Дополнительное поле с рисунком"
             >
-                <img src="../../assets/img/hero/adjust.png" alt="Ремонт" />
+                <img
+                    class="hero__adjusting-img"
+                    src="./src/assets/img/hero/adjust.png"
+                    alt="Ремонт"
+                />
             </div>
 
             <div
                 class="hero__fast-delivery"
                 aria-label="Дополнительное поле с рисунком"
             >
-                <img src="../../assets/img/hero/car.png" alt="Машина" />
+                <img
+                    class="hero__fast-delivery-img"
+                    src="./src/assets/img/hero/car.png"
+                    alt="Машина"
+                />
             </div>
         </div>
     </div>

@@ -7,6 +7,27 @@
     transition: all b.$trans ease;
 }
 
+.button--rect {
+    padding: 18px 58px;
+    background-color: b.$buttonBgColor;
+    border-radius: 64px;
+    color: b.$lightTextColor;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    @media (max-width: b.$mediaTablet) {
+        padding: 14.5px 31px;
+        font-size: 14px;
+    }
+
+    @media (max-width: b.$mediaSmallMobile) {
+        padding: 18px 31px;
+        font-size: 12px;
+    }
+}
+
 .button--circle {
     overflow: visible;
     width: 35px;
@@ -24,6 +45,36 @@
 
     @media (max-width: b.$mediaSmallMobile) {
         padding: 10.5px 9.5px;
+    }
+}
+
+.button--circWhite {
+    padding: 20px;
+    border-radius: 50%;
+    border: 1px solid b.$buttonBgColor;
+
+    @media (max-width: b.$mediaTablet) {
+        padding: 17px;
+    }
+
+    @media (max-width: b.$mediaSmallMobile) {
+        padding: 20px;
+    }
+
+    svg {
+        display: block;
+        width: 20px;
+        height: 20px;
+
+        @media (max-width: b.$mediaTablet) {
+            width: 16px;
+            height: 16px;
+        }
+
+        @media (max-width: b.$mediaSmallMobile) {
+            width: 20px;
+            height: 20px;
+        }
     }
 }
 
