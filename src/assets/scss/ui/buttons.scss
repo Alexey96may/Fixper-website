@@ -8,22 +8,53 @@
 }
 
 .button--rect {
-    padding: 18px 58px;
+    padding: 0 58px;
     background-color: b.$buttonBgColor;
     border-radius: 64px;
     color: b.$lightTextColor;
-
+    white-space: nowrap;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
 
+    span {
+        display: block;
+        white-space: nowrap;
+        transition: all b.$trans ease;
+        padding: 18px 0;
+        border-radius: 200px;
+
+        @media (max-width: b.$mediaTablet) {
+            padding: 14.5px 0;
+        }
+
+        @media (max-width: b.$mediaSmallMobile) {
+            padding: 18px 0;
+        }
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            span {
+                background-color: #ff8c46;
+            }
+        }
+    }
+
+    &:active,
+    &:focus-visible {
+        span {
+            background-color: #ff8c46;
+        }
+    }
+
     @media (max-width: b.$mediaTablet) {
-        padding: 14.5px 31px;
+        padding: 0 31px;
         font-size: 14px;
     }
 
     @media (max-width: b.$mediaSmallMobile) {
-        padding: 18px 31px;
+        padding: 0 31px;
         font-size: 12px;
     }
 }
@@ -53,6 +84,25 @@
     border-radius: 50%;
     border: 1px solid b.$buttonBgColor;
 
+    @media (hover: hover) {
+        &:hover {
+            background-color: b.$buttonBgColor;
+
+            svg {
+                fill: b.$lightBgColor;
+            }
+        }
+    }
+
+    &:active,
+    &:focus-visible {
+        background-color: b.$buttonBgColor;
+
+        svg {
+            fill: b.$lightBgColor;
+        }
+    }
+
     @media (max-width: b.$mediaTablet) {
         padding: 17px;
     }
@@ -65,6 +115,8 @@
         display: block;
         width: 20px;
         height: 20px;
+        transition: all b.$trans ease;
+        fill: b.$buttonBgColor;
 
         @media (max-width: b.$mediaTablet) {
             width: 16px;
